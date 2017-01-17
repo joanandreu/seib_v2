@@ -14,7 +14,7 @@
                 </a>
             </li>
             <li class="{{ Active::pattern('admin/dashboard') }}">
-                <a href="{!! route('backend.entidads.index') !!}">
+                <a href="{{ route('admin.dashboard') }}">
                     <i class="fa fa-cubes"></i>
                     <span>Gestión de Entidades</span>
                 </a>
@@ -100,11 +100,11 @@
                       <!-- Sidebar Menu -->
 
                     <li class="{{ Request::is('tipoentidads*') ? 'active' : '' }}">
-                    <a href="{!! route('backend.tipoentidads.index') !!}">
+                    <a href="{{ route('admin.dashboard') }}">
                     <i class="fa fa-edit"></i><span>Tipos entidades</span></a>
                     </li>
                     <li class="{{ Request::is('tipocargos*') ? 'active' : '' }}">
-                    <a href="{!! route('backend.tipocargos.index') !!}"><i class="fa fa-edit"></i><span>Cargos</span></a>
+                    <a href="{{ route('admin.dashboard') }}"><i class="fa fa-edit"></i><span>Cargos</span></a>
                     </li>
                     <!-- /.sidebar-menu -->
                 </ul>
