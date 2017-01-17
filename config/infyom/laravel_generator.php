@@ -144,7 +144,7 @@ return [
 
         'tests'         => true,
 
-        'datatables'    => false,
+        'datatables'    => true,
 
         'menu'          => [
 
@@ -171,5 +171,6 @@ return [
 
         'deleted_at'    => 'deleted_at',
     ],
+    
 
 ];

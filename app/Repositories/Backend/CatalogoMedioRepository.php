@@ -2,10 +2,10 @@
 
 namespace App\Repositories\Backend;
 
-use App\Models\Backend\TipoEntidad;
+use App\Models\Backend\CatalogoMedio;
 use InfyOm\Generator\Common\BaseRepository;
 
-class TipoEntidadRepository extends BaseRepository
+class CatalogoMedioRepository extends BaseRepository
 {
     /**
      * @var array
@@ -13,9 +13,9 @@ class TipoEntidadRepository extends BaseRepository
     protected $fieldSearchable = [
         'parent_id',
         'tipo',
-        'abreviatura',
-        'tipo_funcional',
-        'cargos'
+        'codigo',
+        'descripcion',
+        'unidad_medida'
     ];
 
     /**
@@ -23,6 +23,6 @@ class TipoEntidadRepository extends BaseRepository
      **/
     public function model()
     {
-        return TipoEntidad::class;
+        return CatalogoMedio::class;
     }
 }

@@ -2,26 +2,28 @@
 
 namespace App\Repositories\Backend;
 
-use App\Models\Backend\Entidad;
+use App\Models\Backend\MedioRecurso;
 use InfyOm\Generator\Common\BaseRepository;
 
-class EntidadRepository extends BaseRepository
+class MedioRecursoRepository extends BaseRepository
 {
     /**
      * @var array
      */
     protected $fieldSearchable = [
-        'parent_id',
-        'nombre',
-        'abreviatura',
-        'tipoentidad',
-        'nivel',
-        'cif',
-        'estado',
-        'telefonos',
-        'emails',
-        'horarios',
+        'entidad',
+        'tipo_medio',
+        'codigo',
+        'descripcion',
+        'valor',
+        'medida',
+        'tipo_riesgo',
+        'modelo',
+        'matricula',
+        'transporte',
+        'grua',
         'responsable',
+        'contacto',
         'municipio',
         'nucleo',
         'calle',
@@ -39,6 +41,6 @@ class EntidadRepository extends BaseRepository
      **/
     public function model()
     {
-        return Entidad::class;
+        return MedioRecurso::class;
     }
 }
