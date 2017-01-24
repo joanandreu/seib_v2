@@ -1,4 +1,4 @@
-##  5.3 Boilerplate Seib v2
+##  5.3 Boilerplate Seib v4
 ### composer install
 ### npm install
 ### php artisan key:generate
@@ -7,3 +7,9 @@
 ### sudo npm install -g gulp
 ### gulp
 ### phpunit
+
+TO DO
+Fase 1 
+- Tipos y subtipos entitats
+- Cargos relacionats
+
