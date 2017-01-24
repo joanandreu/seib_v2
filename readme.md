@@ -1,5 +1,5 @@
 ##  5.3 Boilerplate Seib v2
-# composer install
+### composer install
 # npm install
 # php artisan key:generate
 # php artisan migrate
