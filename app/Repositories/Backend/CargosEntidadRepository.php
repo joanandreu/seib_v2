@@ -2,18 +2,18 @@
 
 namespace App\Repositories\Backend;
 
-use App\Models\Backend\TipoEntidad;
+use App\Models\Backend\CargosEntidad;
 use InfyOm\Generator\Common\BaseRepository;
 
-class TipoEntidadRepository extends BaseRepository
+class CargosEntidadRepository extends BaseRepository
 {
     /**
      * @var array
      */
     protected $fieldSearchable = [
-        'parent_id',
-        'tipo',
-        'tipo_funcional'
+        'tipo_entidads_id',
+        'cargo',
+        'abrv'
     ];
 
     /**
@@ -21,6 +21,6 @@ class TipoEntidadRepository extends BaseRepository
      **/
     public function model()
     {
-        return TipoEntidad::class;
+        return CargosEntidad::class;
     }
 }

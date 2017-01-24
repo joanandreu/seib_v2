@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Backend;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Backend\TipoEntidad;
+use App\Models\Backend\CargosEntidad;
 
-class UpdateTipoEntidadRequest extends FormRequest
+class UpdateCargosEntidadRequest extends FormRequest
 {
 
     /**
@@ -25,6 +25,6 @@ class UpdateTipoEntidadRequest extends FormRequest
      */
     public function rules()
     {
-        return TipoEntidad::$rules;
+        return CargosEntidad::$rules;
     }
 }

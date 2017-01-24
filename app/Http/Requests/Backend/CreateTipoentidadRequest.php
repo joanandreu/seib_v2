@@ -3,9 +3,9 @@
 namespace App\Http\Requests\Backend;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Backend\Tipoentidad;
+use App\Models\Backend\TipoEntidad;
 
-class CreateTipoentidadRequest extends FormRequest
+class CreateTipoEntidadRequest extends FormRequest
 {
 
     /**
@@ -25,6 +25,6 @@ class CreateTipoentidadRequest extends FormRequest
      */
     public function rules()
     {
-        return Tipoentidad::$rules;
+        return TipoEntidad::$rules;
     }
 }
