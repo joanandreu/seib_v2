@@ -13,7 +13,14 @@
 <!-- Tipo Funcional Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('tipo_funcional', 'Tipo Funcional:') !!}
-    {!! Form::text('tipo_funcional', null, ['class' => 'form-control']) !!}
+    {!! Form::select('tipo_funcional', 
+    ['Administración Pública' => 'Administración Pública',
+     'Administración Titular' => 'Administración Titular',
+     'Empresa o Entidad Privada' => 'Empresa o Entidad Privada',
+     'Organismo Público' => 'Organismo Público',
+     'Empresa pública' => 'Empresa pública',
+     ], null, ['class' => 'form-control']) !!}
+
 </div>
 
 <!-- Submit Field -->
