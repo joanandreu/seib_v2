@@ -98,14 +98,8 @@
 
             
                       <!-- Sidebar Menu -->
-
-                    <li class="{{ Request::is('tipoentidads*') ? 'active' : '' }}">
-                    <a href="{{ route('admin.dashboard') }}">
-                    <i class="fa fa-edit"></i><span>Tipos entidades</span></a>
-                    </li>
-                    <li class="{{ Request::is('tipocargos*') ? 'active' : '' }}">
-                    <a href="{{ route('admin.dashboard') }}"><i class="fa fa-edit"></i><span>Cargos</span></a>
-                    </li>
+@include('backend.layouts.menu')
+                  
                     <!-- /.sidebar-menu -->
                 </ul>
             </li>
